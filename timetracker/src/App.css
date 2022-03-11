@@ -55,6 +55,7 @@ body {
 
 /** PROFILE CARD **/
 .profileCard {
+  opacity: 0.25;
   background-color: var(--dark-blue);
   border-radius: 1rem;
   height: var(--card-height);
@@ -110,17 +111,18 @@ body {
 }
 
 .timeButton {
+  display: flex;
   flex-grow: 1;
   width: 33%;
-  display: flex;
   justify-content: center;
   padding: 1.5rem 0;
+  cursor: pointer;
 }
 
 /** HABIT CARD **/
 
 .habitCard {
-  /* opacity: 0; */
+  /* opacity: 0.5; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -238,6 +240,8 @@ body {
     padding: 0;
   }
 
+
+
   .report {
     font-size: 15px;
     width: 100%;
@@ -247,18 +251,23 @@ body {
     font-size: 40px;
   }
 
+  .profileCardBottom {
+    height: max-content;
+  }
+
   .buttonWrapper {
 
-    height: 29%;
+    height: 10rem;
+    /* padding-top: 0.5rem; */
     flex-wrap: wrap;
-    padding: 0.85rem 2rem;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .timeButton {
+    flex-grow: 0;
     justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    padding: 0rem;
+    padding: 0rem 2rem;
   }
 
   .habitCardsContainer {
@@ -268,7 +277,7 @@ body {
     align-content: space-between;
     flex-wrap: wrap;
     row-gap: 1.5rem;
-    column-gap: 1.75rem;
+    column-gap: 1.8rem;
   }
 
   .habitCard {
@@ -277,9 +286,13 @@ body {
     height: 15.5rem;
   }
 
+  .habitCardContent {
+    height: 81%;
+
+  }
 
   .cardContentTop {
-    padding: 0.5rem;
+    padding: 0rem 0.5rem;
     align-items: flex-start;
     font-size: 19px;
   }
@@ -294,7 +307,7 @@ body {
   }
 
   .cardContentCenter .current {
-    padding: 0.5rem;
+    padding: 0 0.5rem;
     font-size: 56px;
   }
 
