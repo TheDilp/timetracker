@@ -17,7 +17,7 @@
 
 body {
   background-color: var(--very-dark-blue);
-  /* background-image: url("../public//desktop-design.jpg"); */
+  background-image: url("../public//desktop-design.jpg");
   font-family: "Rubik", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -57,7 +57,6 @@ body {
 .profileCard {
   background-color: var(--dark-blue);
   border-radius: 1rem;
-  opacity: 0.5;
   height: var(--card-height);
 
 }
@@ -121,12 +120,12 @@ body {
 /** HABIT CARD **/
 
 .habitCard {
+  /* opacity: 0; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
   margin: 1.5rem 0;
-  opacity: 0.5;
   border-radius: var(--card-border-radius);
   height: 10rem;
   overflow: hidden;
@@ -203,16 +202,14 @@ body {
   .App {
     display: flex;
     padding: 5rem 10.25rem;
-    /* margin: 5rem; */
-    gap: 2rem;
+    gap: 1.75rem;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     height: 100vh;
-    /* background-color: greenyellow; */
   }
 
-  .profileCardContainer {
-    margin-top: 10.75rem;
+  .profileCardContainer,
+  .habitCardsContainer {
     width: 16.25rem;
     height: 32.5rem;
   }
@@ -267,13 +264,42 @@ body {
   .habitCardsContainer {
     width: 75%;
     display: flex;
+    align-items: center;
+    align-content: space-between;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    row-gap: 1.5rem;
+    column-gap: 1.75rem;
   }
 
   .habitCard {
-    width: 25%;
-    height: 80%;
+    margin: 0;
+    width: 31%;
+    height: 15.5rem;
+  }
+
+
+  .cardContentTop {
+    padding: 0.5rem;
+    align-items: flex-start;
+    font-size: 19px;
+  }
+
+  .cardContentCenter {
+    flex-wrap: wrap;
+  }
+
+  .current,
+  .previous {
+    width: 100%;
+  }
+
+  .cardContentCenter .current {
+    padding: 0.5rem;
+    font-size: 56px;
+  }
+
+  .cardContentCenter .previous {
+    padding: 0rem 0.5rem;
   }
 
 
