@@ -15,7 +15,11 @@ export default function ProfileCard() {
         </div>
       </div>
       <div className="profileCardBottom">
-          
+        <div className="buttonWrapper">
+          <span className="timeButton">Daily</span>
+          <span className="timeButton">Weekly</span>
+          <span className="timeButton">Monthly</span>
+        </div>
       </div>
     </div>
   );
