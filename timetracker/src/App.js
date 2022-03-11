@@ -24,7 +24,7 @@ function App() {
         setSelectedMode={setSelectedMode}
       />
       {habits.map((habit, index) => (
-        <HabitCard key={index} />
+        <HabitCard key={index} selectedMode={selectedMode} habit={habit} />
       ))}
     </div>
   );
