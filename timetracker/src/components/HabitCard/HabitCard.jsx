@@ -2,12 +2,12 @@ import React from "react";
 
 export default function HabitCard({ selectedMode, habit }) {
   return (
-    <div className="habitCard" id={habit.title.toLowerCase()}>
+    <div className="habitCard" id={habit.title.toLowerCase().replace(" ", "-")}>
       <div className="habitCardIcon">
         <img
-          src={`${
-            process.env.PUBLIC_URL
-          }/icon-${habit.title.toLowerCase()}.svg`}
+          src={`${process.env.PUBLIC_URL}/icon-${habit.title
+            .toLowerCase()
+            .replace(" ", "-")}.svg`}
           alt={habit.title}
         />
       </div>
