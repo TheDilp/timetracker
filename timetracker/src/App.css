@@ -17,13 +17,40 @@
 
 body {
   background-color: var(--very-dark-blue);
-  background-image: url("../public//mobile-design.jpg");
+  /* background-image: url("../public//desktop-design.jpg"); */
   font-family: "Rubik", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 .App {
   padding: 5rem 1.5rem 0 1.5rem;
+}
+
+/** HABIT CARD BACKGROUND COLORS**/
+
+
+#work {
+  background-color: var(--light-orange);
+}
+
+#play {
+  background-color: var(--soft-blue);
+}
+
+#study {
+  background-color: var(--light-red);
+}
+
+#exercise {
+  background-color: var(--lime-green);
+}
+
+#social {
+  background-color: var(--violet);
+}
+
+#self-care {
+  background-color: var(--soft-orange);
 }
 
 /** PROFILE CARD **/
@@ -172,28 +199,82 @@ body {
   color: var(--pale-blue)
 }
 
+@media only screen and (min-width: 1440px) {
+  .App {
+    display: flex;
+    padding: 5rem 10.25rem;
+    /* margin: 5rem; */
+    gap: 2rem;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    /* background-color: greenyellow; */
+  }
+
+  .profileCardContainer {
+    margin-top: 10.75rem;
+    width: 16.25rem;
+    height: 32.5rem;
+  }
+
+  .profileCard {
+    height: 100%;
+    width: 100%;
+  }
+
+  .profileCardTop {
+    height: 68.5%;
+    flex-wrap: wrap;
+    gap: 0;
+    padding-top: 2rem;
+    align-items: flex-start;
+  }
+
+  .profileCardTop img {
+    width: 5rem;
+    margin-top: 0.25rem;
+    height: 5rem;
+  }
+
+  .profileTopText {
+    width: 100%;
+    padding: 0;
+  }
+
+  .report {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .profileName {
+    font-size: 40px;
+  }
+
+  .buttonWrapper {
+
+    height: 29%;
+    flex-wrap: wrap;
+    padding: 0.85rem 2rem;
+  }
+
+  .timeButton {
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .habitCardsContainer {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .habitCard {
+    width: 25%;
+    height: 80%;
+  }
 
 
-#work {
-  background-color: var(--light-orange);
-}
-
-#play {
-  background-color: var(--soft-blue);
-}
-
-#study {
-  background-color: var(--light-red);
-}
-
-#exercise {
-  background-color: var(--lime-green);
-}
-
-#social {
-  background-color: var(--violet);
-}
-
-#self-care {
-  background-color: var(--soft-orange);
 }

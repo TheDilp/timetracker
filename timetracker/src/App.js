@@ -19,13 +19,17 @@ function App() {
 
   return (
     <div className="App">
-      <ProfileCard
-        selectedMode={selectedMode}
-        setSelectedMode={setSelectedMode}
-      />
-      {habits.map((habit, index) => (
-        <HabitCard key={index} selectedMode={selectedMode} habit={habit} />
-      ))}
+      <div className="profileCardContainer">
+        <ProfileCard
+          selectedMode={selectedMode}
+          setSelectedMode={setSelectedMode}
+        />
+      </div>
+      <div className="habitCardsContainer">
+        {habits.map((habit, index) => (
+          <HabitCard key={index} selectedMode={selectedMode} habit={habit} />
+        ))}
+      </div>
     </div>
   );
 }
