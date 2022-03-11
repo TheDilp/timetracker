@@ -13,6 +13,52 @@
 }
 
 body {
-  font-family: Rubik, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--very-dark-blue);
+  background-image: url("../public//mobile-design.jpg");
+  font-family: "Rubik", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+.App {
+  padding: 5rem 1.5rem 0 1.5rem;
+}
+
+/** PROFILE CARD **/
+.profileCard {
+  opacity: 0.5;
+}
+
+.profileCardTop {
+  display: flex;
+  padding: 2rem 2rem;
+  background-color: var(--blue);
+  border-radius: 1rem;
+}
+
+.profileTopText {
+  padding-left: 1rem;
+  padding-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.report {
+  font-size: 14px;
+  color: var(--pale-blue);
+}
+
+.profileName {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+}
+
+.profileCardImage {
+  border: 2px white solid;
+  border-radius: 50%;
+  width: 4.35rem;
+  height: 4.35rem;
+}
+
+.profileC
