@@ -1,6 +1,6 @@
 :root {
   --blue: hsl(246, 80%, 60%);
-  --light-red: hsl(15, 100%, 70%);
+  --light-orange: hsl(15, 100%, 70%);
   --soft-blue: hsl(195, 74%, 62%);
   --light-red: hsl(348, 100%, 68%);
   --lime-green: hsl(145, 58%, 55%);
@@ -17,7 +17,7 @@
 
 body {
   background-color: var(--very-dark-blue);
-  /* background-image: url("../public//mobile-design.jpg"); */
+  background-image: url("../public//mobile-design.jpg");
   font-family: "Rubik", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -99,13 +99,13 @@ body {
 
   margin: 1.5rem 0;
   /* opacity: 0.5; */
-  /* background-color: antiquewhite; */
   border-radius: var(--card-border-radius);
   height: 10rem;
 }
 
 .habitCardContent {
   display: flex;
+
   padding: 1.5rem 1.35rem;
   flex-wrap: wrap;
   width: 100%;
@@ -118,12 +118,12 @@ body {
 .cardContentCenter {
   width: 100%;
   display: flex;
-  /* align-items: center; */
 }
 
 .cardContentTop span:first-child,
 .cardContentCenter span:first-child {
   color: white;
+
 }
 
 .cardContentTop span:first-child {
@@ -153,4 +153,8 @@ body {
   font-size: 16px;
   font-weight: 300;
   color: var(--pale-blue)
+}
+
+#work {
+  background-color: var(--light-orange);
 }
