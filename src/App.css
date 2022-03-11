@@ -1,0 +1,321 @@
+:root {
+  --blue: hsl(246, 80%, 60%);
+  --light-orange: hsl(15, 100%, 70%);
+  --soft-blue: hsl(195, 74%, 62%);
+  --light-red: hsl(348, 100%, 68%);
+  --lime-green: hsl(145, 58%, 55%);
+  --violet: hsl(264, 64%, 52%);
+  --soft-orange: hsl(43, 84%, 65%);
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+
+  --card-border-radius: 1rem;
+  --card-height: 12.75rem;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  background-image: url("../public//desktop-design.jpg");
+  font-family: "Rubik", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.App {
+  padding: 5rem 1.5rem 0 1.5rem;
+}
+
+/** HABIT CARD BACKGROUND COLORS**/
+
+
+#work {
+  background-color: var(--light-orange);
+}
+
+#play {
+  background-color: var(--soft-blue);
+}
+
+#study {
+  background-color: var(--light-red);
+}
+
+#exercise {
+  background-color: var(--lime-green);
+}
+
+#social {
+  background-color: var(--violet);
+}
+
+#self-care {
+  background-color: var(--soft-orange);
+}
+
+/** PROFILE CARD **/
+.profileCard {
+  background-color: var(--dark-blue);
+  border-radius: 1rem;
+  height: var(--card-height);
+
+}
+
+.profileCardTop {
+  display: flex;
+  padding: 2rem 2rem;
+  background-color: var(--blue);
+  border-radius: var(--card-border-radius);
+}
+
+.profileTopText {
+  padding-left: 1rem;
+  padding-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.report {
+  font-size: 14px;
+  color: var(--pale-blue);
+}
+
+.profileName {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+}
+
+.profileCardImage {
+  border: 2px white solid;
+  border-radius: 50%;
+  width: 4.35rem;
+  height: 4.35rem;
+}
+
+.profileCardBottom {
+  font-size: 18px;
+  color: var(--desaturated-blue);
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.buttonWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.timeButton {
+  display: flex;
+  flex-grow: 1;
+  width: 33%;
+  justify-content: center;
+  padding: 1.5rem 0;
+  cursor: pointer;
+}
+
+/** HABIT CARD **/
+
+.habitCard {
+  /* opacity: 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  margin: 1.5rem 0;
+  border-radius: var(--card-border-radius);
+  height: 10rem;
+}
+
+.habitCardContent {
+  display: flex;
+  padding: 1.5rem 1.35rem;
+  position: relative;
+  z-index: 2;
+  flex-wrap: wrap;
+  height: 75.5%;
+  background-color: var(--dark-blue);
+  border-radius: var(--card-border-radius);
+}
+
+.habitCardIcon {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+
+}
+
+.habitCardIcon img {
+  margin-right: 1rem;
+  margin-top: -0.5rem;
+}
+
+.cardContentTop,
+.cardContentCenter {
+  width: 100%;
+  display: flex;
+
+}
+
+.cardContentTop span:first-child,
+.cardContentCenter span:first-child {
+  color: white;
+
+}
+
+.cardContentTop span:first-child {
+  font-weight: 400;
+}
+
+.cardContentCenter span:first-child {
+  font-weight: 300;
+}
+
+.cardContentTop {
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+.cardContentCenter {
+  justify-content: space-between;
+  padding-top: 0.35rem;
+}
+
+.cardContentCenter .current {
+  font-size: 32px;
+}
+
+.cardContentCenter .previous {
+  padding-top: 0.5rem;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--pale-blue)
+}
+
+@media only screen and (min-width: 1440px) {
+  .App {
+    display: flex;
+    padding: 5rem 10.25rem;
+    gap: 1.75rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .profileCardContainer,
+  .habitCardsContainer {
+    width: 16.25rem;
+    height: 32.5rem;
+  }
+
+  .profileCard {
+    height: 100%;
+    width: 100%;
+  }
+
+  .profileCardTop {
+    height: 68.5%;
+    flex-wrap: wrap;
+    gap: 0;
+    padding-top: 2rem;
+    align-items: flex-start;
+  }
+
+  .profileCardTop img {
+    width: 5rem;
+    margin-top: 0.25rem;
+    height: 5rem;
+  }
+
+  .profileTopText {
+    width: 100%;
+    padding: 0;
+  }
+
+
+
+  .report {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .profileName {
+    font-size: 40px;
+  }
+
+  .profileCardBottom {
+    height: max-content;
+  }
+
+  .buttonWrapper {
+
+    height: 10rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .timeButton {
+    flex-grow: 0;
+    justify-content: flex-start;
+    padding: 0rem 2rem;
+  }
+
+  .habitCardsContainer {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    column-gap: 1.8rem;
+  }
+
+  .habitCard {
+    align-items: center;
+    margin: 0;
+    width: 31%;
+    height: 15.5rem;
+  }
+
+  .habitCardContent {
+    position: relative;
+    width: calc(100% + 2px);
+    overflow: visible;
+    height: 81%;
+  }
+
+  .cardContentTop {
+    padding: 0rem 0.5rem;
+    align-items: flex-start;
+    font-size: 19px;
+  }
+
+  .cardContentCenter {
+    flex-wrap: wrap;
+  }
+
+  .current,
+  .previous {
+    width: 100%;
+  }
+
+  .cardContentCenter .current {
+    padding: 0 0.5rem;
+    font-size: 56px;
+  }
+
+  .cardContentCenter .previous {
+    padding: 0rem 0.5rem;
+  }
+
+
+}
