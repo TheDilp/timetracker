@@ -3,15 +3,15 @@ import React from "react";
 export default function HabitCard({ selectedMode, habit }) {
   return (
     <div className="habitCard" id={habit.title.toLowerCase()}>
+      <div className="habitCardIcon">
+        <img
+          src={`${
+            process.env.PUBLIC_URL
+          }/icon-${habit.title.toLowerCase()}.svg`}
+          alt={habit.title}
+        />
+      </div>
       <div className="habitCardContent">
-        <div className="habitCardIcon">
-          <img
-            src={`${
-              process.env.PUBLIC_URL
-            }/icon-${habit.title.toLowerCase()}.svg`}
-            alt={habit.title}
-          />
-        </div>
         <div className="cardContentTop">
           <span>{habit.title}</span>
           <span>
