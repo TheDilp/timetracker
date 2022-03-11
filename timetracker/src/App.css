@@ -105,9 +105,24 @@ body {
 }
 
 .habitCardContent {
+  display: flex;
+  padding: 1.5rem 1.35rem;
+  flex-wrap: wrap;
   width: 100%;
   height: 75.5%;
-  background-color: lightcoral;
-  /* background-color: var(--dark-blue); */
+  color: var(--desaturated-blue);
+  background-color: var(--dark-blue);
   border-radius: var(--card-border-radius);
+}
+
+.cardContentTop,
+.cardContentBottom {
+  width: 100%;
+}
+
+.cardContentTop {
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
 }
