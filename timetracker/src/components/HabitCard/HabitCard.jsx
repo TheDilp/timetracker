@@ -14,8 +14,8 @@ export default function HabitCard() {
           </span>
         </div>
         <div className="cardContentCenter">
-          <span>32hrs</span>
-          <span>Last Week - 36hrs</span>
+          <span className="current">32hrs</span>
+          <span className="previous">Last Week - 36hrs</span>
         </div>
       </div>
     </div>
