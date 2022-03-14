@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <main className="App">
       <div className="profileCardContainer">
         <ProfileCard
           selectedMode={selectedMode}
@@ -30,7 +30,7 @@ function App() {
           <HabitCard key={index} selectedMode={selectedMode} habit={habit} />
         ))}
       </div>
-    </div>
+    </main>
   );
 }
 

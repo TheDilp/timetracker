@@ -15,7 +15,7 @@ export default function ProfileCard({ selectedMode, setSelectedMode }) {
         />
         <div className="profileTopText">
           <div className="report">Report for</div>
-          <div className="profileName">Jeremy Robson</div>
+          <h1 className="profileName">Jeremy Robson</h1>
         </div>
       </div>
       <div className="profileCardBottom">
