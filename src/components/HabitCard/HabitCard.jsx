@@ -16,8 +16,13 @@ export default function HabitCard({ selectedMode, habit }) {
           <span>{habit.title}</span>
           <span>
             <img
+              className="elipsis"
               src={`${process.env.PUBLIC_URL}/icon-ellipsis.svg`}
               alt="DotDotDot"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+              }}
             />
           </span>
         </div>

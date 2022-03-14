@@ -18,7 +18,6 @@
 body {
   background-color: var(--very-dark-blue);
   font-family: "Rubik", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: url("../mobile-design.jpg");
 }
 
 .App {
@@ -54,7 +53,6 @@ body {
 
 /** PROFILE CARD **/
 .profileCard {
-  opacity: 0.25;
   background-color: var(--dark-blue);
   border-radius: 1rem;
   height: var(--card-height);
@@ -120,10 +118,13 @@ body {
   cursor: pointer;
 }
 
+.timeButton:active {
+  color: white;
+}
+
 /** HABIT CARD **/
 
 .habitCard {
-  /* opacity: 0.5; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -142,6 +143,11 @@ body {
   height: 4.5rem;
   background-color: var(--dark-blue);
   border-radius: var(--card-border-radius);
+}
+
+.habitCardContent:active:not(.elipsis) {
+  cursor: pointer;
+  filter: brightness(1.5)
 }
 
 .habitCardIcon {
@@ -177,6 +183,10 @@ body {
   font-weight: 400;
 }
 
+.cardContentTop span .elipsis:active {
+  filter: brightness(0) invert(1);
+}
+
 .cardContentCenter span:first-child {
   font-weight: 300;
 }
@@ -205,8 +215,8 @@ body {
 @media only screen and (min-width: 1440px) {
   .App {
     display: flex;
-    padding: 5rem 10.25rem;
-    gap: 1.75rem;
+    padding: 0rem 8rem;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -214,17 +224,23 @@ body {
 
   .profileCardContainer,
   .habitCardsContainer {
-    width: 16.25rem;
     height: 32.5rem;
+    margin-top: -1rem;
+  }
+
+  .profileCardContainer {
+    width: 22%;
+    margin: -1rem 0 0 1.75rem;
+
   }
 
   .profileCard {
     height: 100%;
-    width: 100%;
+    width: 102%;
   }
 
   .profileCardTop {
-    height: 68.5%;
+    height: 18.5rem;
     flex-wrap: wrap;
     gap: 0;
     padding-top: 2rem;
@@ -276,17 +292,19 @@ body {
     align-content: space-between;
     flex-wrap: wrap;
     row-gap: 1.5rem;
-    column-gap: 1.8rem;
+    column-gap: 1.5rem;
   }
 
+
   .habitCard {
+    width: 16.25rem;
     align-items: center;
     margin: 0;
-    width: 31%;
     height: 15.5rem;
   }
 
   .habitCardContent {
+    padding: 0;
     position: relative;
     width: calc(100% + 2px);
     overflow: visible;
@@ -294,13 +312,16 @@ body {
   }
 
   .cardContentTop {
-    padding: 0rem 0.5rem;
+    padding: 1.5rem 1.75rem;
     align-items: flex-start;
     font-size: 19px;
   }
 
   .cardContentCenter {
     flex-wrap: wrap;
+    margin-top: -2rem;
+    padding: 0rem 2rem;
+
   }
 
   .current,
@@ -309,12 +330,12 @@ body {
   }
 
   .cardContentCenter .current {
-    padding: 0 0.5rem;
+    padding-top: 1rem;
     font-size: 56px;
   }
 
   .cardContentCenter .previous {
-    padding: 0rem 0.5rem;
+    padding-bottom: 1.5rem;
   }
 
 
