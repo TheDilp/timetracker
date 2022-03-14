@@ -18,11 +18,11 @@
 body {
   background-color: var(--very-dark-blue);
   font-family: "Rubik", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url("../mobile-design.jpg");
 }
 
-
 .App {
-  padding: 5rem 1.5rem 0 1.5rem;
+  padding: 4.5rem 1rem 0 1rem;
 }
 
 /** HABIT CARD BACKGROUND COLORS**/
@@ -54,6 +54,7 @@ body {
 
 /** PROFILE CARD **/
 .profileCard {
+  opacity: 0.25;
   background-color: var(--dark-blue);
   border-radius: 1rem;
   height: var(--card-height);
@@ -62,19 +63,20 @@ body {
 
 .profileCardTop {
   display: flex;
-  padding: 2rem 2rem;
+  padding: 1.75rem 1.75rem;
   background-color: var(--blue);
   border-radius: var(--card-border-radius);
 }
 
 .profileTopText {
   padding-left: 1rem;
-  padding-top: 0.75rem;
   display: flex;
   flex-wrap: wrap;
 }
 
 .report {
+
+  padding-top: 1rem;
   font-size: 14px;
   color: var(--pale-blue);
 }
@@ -84,13 +86,14 @@ body {
   font-size: 24px;
   font-weight: 300;
   color: white;
+  margin-top: 0.25rem;
 }
 
 .profileCardImage {
   border: 2px white solid;
   border-radius: 50%;
-  width: 4.35rem;
-  height: 4.35rem;
+  width: 4.25rem;
+  height: 4.25rem;
 }
 
 .profileCardBottom {
@@ -237,8 +240,6 @@ body {
     width: 100%;
     padding: 0;
   }
-
-
 
   .report {
     font-size: 15px;

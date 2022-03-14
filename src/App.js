@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import "./reset.css";
-import "./App.css";
 import HabitCard from "./components/HabitCard/HabitCard";
 import ProfileCard from "./components/ProfileCard/ProfileCard";
+import "./App.css";
 
 function App() {
   const [habits, setHabits] = useState([]);
