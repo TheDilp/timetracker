@@ -30,19 +30,6 @@ export default function ProfileCard({ selectedMode, setSelectedMode }) {
               {mode}
             </span>
           ))}
-          {/* <span
-            className="timeButton"
-            onClick={() => switchMode("Daily")}
-            style={{ color: selectedMode === "Daily" }}
-          >
-            Daily
-          </span>
-          <span className="timeButton" onClick={() => switchMode("Weekly")}>
-            Weekly
-          </span>
-          <span className="timeButton" onClick={() => switchMode("Monthly")}>
-            Monthly
-          </span> */}
         </div>
       </div>
     </div>
